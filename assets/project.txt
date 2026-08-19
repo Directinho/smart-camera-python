@@ -1,0 +1,27 @@
+A equipe deve dar continuidade ao desenvolvimento da Sprint anterior, contemplando os novos requisitos solicitados a sequir:​
+
+Solução em Python (Total 70 pontos):​
+(25 pontos) Implementação do programa em Python contendo:​
+Menu de opções com as funcionalidades do sistema.​
+As funcionalidades implementadas devem estar de acordo com a ideia proposta no projeto.​
+Após a execução de cada funcionalidade, o programa deve retornar para o menu principal. ​
+O programa deve disponibilizar uma opção para finalizar a execução.​
+(45 pontos) Na implementação será avaliada a aplicação correta dos conceitos de:​
+Organização do sistema em subrotinas (funções).​
+Utilização adequada de parâmetros e retorno de funções.​
+Realizar validações em entrada de usuário e tratar exceções utilizando try/except.​
+Manipulação de dados utilizando listas e dicionários.​
+Aplicação de boas práticas de programação.​
+Apresentar interface intuitiva, com mensagens claras e fácil navegabilidade.​
+
+
+Documentação (25 pontos):​
+Especificação técnica do projeto - Arquivo PDF com a documentação da solução contendo:​
+(2.5 pontos) Capa - contendo o nome do projeto e nomes dos integrantes do grupo. ​
+(2.5 pontos) Sumário - como o documento está organizado.​
+(10 pontos) Descritivo do Projeto - contendo objetivos e justificativa, e descrição das funcionalidades implementadas. ​
+(10 pontos) Justificativa de alterações realizadas em relação à Sprint anterior (o que foi removido, o que foi modificado e o que foi adicionado).​
+Formato de entrega (5 pontos):​
+Entregar via TEAMS um único arquivo compactado (ZIP) contendo:​
+Arquivo pdf com a documentação​
+Código-fonte em Python​
