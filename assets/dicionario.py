@@ -7,7 +7,7 @@ modos = {
         {"id": 5, "modo": "paisagem"},
         {"id": 6, "modo": "comida"},
         {"id": 7, "modo": "animal"},
-        {"id": 8, "modo": "objeto"}  # adicionei porque você criou o dicionário
+        {"id": 8, "modo": "objeto"} 
     ]
 }
 
