@@ -280,7 +280,7 @@ while True:
     elif opcao == 2:
         view_history()
  
-    elif opcao == 4:
+    elif opcao == 3:
         print("\nFechando SmartCamera AI...")
         print("Obrigado por utilizar o sistema!")
         break

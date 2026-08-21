@@ -12,40 +12,27 @@ def opcao1():
 
     try:
 
-        subprocess.run([sys.executable, "assets/smart.py"])
+        subprocess.run([sys.executable, "smart.py"], cwd="assets")
 
-    except FileNotFoundError:
-
-        print("Erro ao abrir")
-
-def opcao2():
-
-    try:
-
-        subprocess.run([sys.executable, "./assets/cronograma.py"])
-
-    except FileNotFoundError:
+    except Exception:
 
         print("Erro ao abrir")
 
-""" Inicio do loop """
+
+# Inicio do loop 
 
 def opcoes():
     while True:
-        print("\nSmartCamera AI\n\n1 - SmartCamera BETA\n2 - Opção 2\n3 - Ver Grupo\n4 - Sair do Sistema")
+        print("\nSmartCamera AI\n1 - SmartCamera BETA\n2- Ver Grupo\n3- Sair do Sistema")
         opcao = input("Insira o valor: ")
         if opcao == "1":
             print("\nopcao 1 escolhida!\n")
             opcao1()
-            break
             
         elif opcao == "2":
-            print("\nopcao 2 escolhida\n")
-            opcao2()
-        elif opcao == "3":
             print(grupo)    
 
-        elif opcao == "4":
+        elif opcao == "3":
             print("Fechando programa")
             break
 

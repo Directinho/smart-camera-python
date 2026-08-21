@@ -26,7 +26,7 @@ def modo_log_ativado(modo_dict):
             config["ativo"] = True
 
         print(f"\n✅ {modo['log']}")
-        print(f"   → {modo['sobre']}")
+        print(f" ->  {modo['sobre']}")
         for cfg in modo["config"]:
             status = "Ativado" if cfg["ativo"] else "Desativado"
             print(f"     • {cfg['opcao']}: {status}")
@@ -138,6 +138,8 @@ def galeria(fotos):
 
 
 def smart():
+    global modo_pessoa, modo_documento, modo_evento, modo_animal, modo_comida
+
     fotos = 0
     pessoa = False
     pessoas = 0
@@ -199,7 +201,7 @@ def smart():
             print(f"\n⚠️  Erro: {e}")
             print("Tente novamente")
 
-        input("\nclique no  enter para voltar ao menu")
+        input("\nclique no  enter para voltar ao menu: ")
 
 
 smart()
