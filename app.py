@@ -1,12 +1,10 @@
 import sys
 import subprocess
 from main import limpar, continuar
-import cv2 
 import numpy as np
-import requests
-import urllib.request
 import matplotlib.pyplot as plt
-
+from ai import analisar_imagem
+from PIL import Image
 from urllib.parse import urlparse # Para checar o URL
 
 url = str("")
@@ -17,26 +15,37 @@ imagem2 = "https://i.imgur.com/fjJI94N.png"
 limpar()
 print("SMART CAMERA INICIADA\n")
 
-def ai(url): 
-    r = requests.get(url)
-    print("Teste")
-    imgar = np.array(bytearray(r.text,'utf-8'),dtype=np.uint8)
-    img = cv2.imdecode(imgar,-1)
-    cv2.imshow('img',img)
-    cv2.waitKey()
-    url_response = urllib.request.urlopen(url)
-    img = cv2.imdecode(np.array(bytearray(url_response.read()), dtype=np.uint8), -1)
-
-def ajuda():
+def ai(url):
     limpar()
-    print("Este projeto utilizamos a biblioteca OpenCV para analisar a imagem enviada\npara testar é preciso enviar uma imagem para um banco de dados de imagens como imgur\ne freeimagehost quando mandar a imagem clique no botao direito e copiar URL normalmente eles\nseguem um padrão como por exemplo:\nImgur tem um url inicial padrão: https://i.imgur.com/snWXh....\nFreeimagehost tem o padrão de URL: https://iili.io/nap....\n")
+    print("SMART CAMERA AI")
+    print("Analisando imagem com o Gemini...\n")
+    analisar_imagem(url)
     continuar()
     smart()
 
+
+def ajuda():
+    limpar()
+    print(
+        "Este projeto utiliza a API do Google Gemini para analisar imagens.\n"
+        "Para testar é preciso enviar uma imagem hospedada no Imgur ou Freeimage.host.\n"
+        "Quando mandar a imagem, clique com o botão direito e copie o URL direto da imagem.\n\n"
+        "Exemplos de padrões de URL:\n"
+        "• Imgur: https://i.imgur.com/snWXh....\n"
+        "• Freeimage.host: https://iili.io/nap....\n"
+    )
+    continuar()
+    smart()
+
+
 def imagens():
     limpar()
-    print(f"As imagens exemplos funcionam ao você digitar na entrada de URL\nos números de cada imagem, ou você pode apenas copiar o URL:\n\n1 -Pato Com Oculos: {imagem1}\n2- Notebook: {imagem2}\n\n")
-
+    print(
+        "As imagens exemplos funcionam ao você digitar na entrada de URL\n"
+        "os números de cada imagem, ou você pode apenas copiar o URL:\n\n"
+        f"1 - Pato Com Óculos: {imagem1}\n"
+        f"2 - Notebook: {imagem2}\n"
+    )
     continuar()
     smart()
 

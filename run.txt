@@ -1,0 +1,2 @@
+Cole esse comando antes de testar nosso projeto:
+python -m pip install requests python-dotenv google-genai numpy matplotlib Pillow
