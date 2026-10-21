@@ -35,7 +35,7 @@ def continuar():
 # Inicio do loop 
 def opcoes():
     limpar()
-    print("\nSmartCamera AI\n1 - SmartCamera BETA\n2- SmartCamera AI\n3- Ver Grupo\n4- Sair do Sistema")
+    print("\nSmartCamera AI\n1 - SmartCamera BETA\n2- SmartCamera AI (NOVO)\n3- Ver Grupo\n4- Sair do Sistema")
     opcao = input("Insira o valor: ")
     if opcao == "1":  
         opcao1()
